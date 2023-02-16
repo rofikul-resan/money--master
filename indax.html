@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly earn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .grid-design {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+    </style>
+
+</head>
+
+<body class="w-screen h-screen">
+    <header class="pt-1"><img src="./image/Money Master💰.png" alt="" class=" block mx-auto my-7"></header>
+
+    <!-- main section ------------------------ -->
+    <main class="flex gap-10">
+        <div class="pl-4">
+            <img src="./image/Pexels Photo by Karolina Grabowska.png" alt="" class="w-full">
+        </div>
+
+        <div class="mx-auto">
+            <h4 class=" text-3xl font-semibold text-center mb-4">Income</h4>
+            <div>
+                <div class="grid justify-center">
+                    <div class="text-xl mb-4 grid-design">
+                        <label for="" class="mr-4 ml-auto">Income :</label>
+                        <input id="income" class=" border rounded-sm bg-gray-300 px-4 py-2" type="text"
+                            placeholder="10000">
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-3xl font-semibold text-center mb-4">Expenses</h4>
+            <div class="grid justify-center items-end">
+                <div class="text-xl mb-4 grid-design">
+                    <label for="" class="mr-4 ml-auto">Food :</label>
+                    <input id="Food" class=" border rounded-sm bg-gray-300 px-4 py-2" type="text" placeholder="10000">
+                </div>
+
+                <div class="text-xl mb-4 grid-design">
+                    <label for="" class="mr-4 ml-auto">Rent :</label>
+                    <input id="Rent" class=" border rounded-sm bg-gray-300 px-4 py-2" type="text" placeholder="10000">
+                </div>
+
+                <div class="text-xl mb-4 grid-design">
+                    <label for="" class="mr-4 ml-auto">Clothes :</label>
+                    <input id="Clothes" class=" border rounded-sm bg-gray-300 px-4 py-2" type="text"
+                        placeholder="10000">
+                </div>
+            </div>
+            <p id="error-Massage" class="text-sm text-red-700 font-semibold text-center "></p>
+            <button id="totalBalance"
+                class=" bg-violet-400 text-white font-semibold text-2xl px-6 py-3 rounded-md mx-auto block my-6">Calculate</button>
+
+            <p class="text-3xl font-semibold text-center mb-4">Total Expenses: <span id="TotalExpenses">0</span> </p>
+            <p class="text-3xl font-semibold text-center mb-4">Balance: <span id="Balance">0</span> </p>
+            <div class="text-xl mb-4 ">
+                <label for="" class="mr-4 ml-auto">Save:</label>
+                <input id="parseint-Value" class=" border rounded-sm bg-gray-300 px-4 py-2 w-24" type="text"
+                    placeholder="0">
+                <span class="mx-8 font-bold">%</span>
+                <button id="save"
+                    class=" bg-violet-400 text-white font-semibold text-2xl px-6 py-2 rounded-md mx-auto  my-6">Save</button>
+            </div>
+
+
+            <p class="text-3xl font-semibold text-center mb-4">Saving Amount: <span id="SavingAmount">0</span> </p>
+            <p class="text-3xl font-semibold text-center mb-4">Remaining Balance: <span id="RemainingBalance">0</span>
+            </p>
+
+        </div>
+    </main>
+
+
+
+    <script src="./utilitis.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
